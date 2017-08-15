@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>wilx.System.Linq.Dynamic.Core</PackageId>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <PackageProjectUrl>https://github.com/wilx2000/System.Linq.Dynamic</PackageProjectUrl>
+    <PackageTags>Linq.Dynamic,DoNet,.NetStandard,Core,DynamicExpression</PackageTags>
+    <Description>This is a fork of the System.Linq.Dynamic project.</Description>
+    <PackageVersion>1.6.0</PackageVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -9,5 +16,6 @@
     <PackageReference Include="System.Reflection" Version="4.3.0" />
     <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.1.248" />
   </ItemGroup>
 </Project>
