@@ -2,13 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackOnBuild>true</PackOnBuild>
     <PackageId>wilx.System.Linq.Dynamic.Core</PackageId>
     <DevelopmentDependency>true</DevelopmentDependency>
     <PackageProjectUrl>https://github.com/wilx2000/System.Linq.Dynamic</PackageProjectUrl>
     <PackageTags>Linq.Dynamic,DoNet,.NetStandard,Core,DynamicExpression</PackageTags>
-    <Description>This is a fork of the System.Linq.Dynamic project.</Description>
-    <PackageVersion>2.0.0</PackageVersion>
+    <Description>Implementation of the MS System.Linq.Dynamic library in .Net Core</Description>
+    <PackageVersion>2.1.0</PackageVersion>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -19,7 +19,11 @@
     <PackageReference Include="System.Reflection" Version="4.3.0" />
     <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
     <PackageReference Include="System.Linq.Queryable" Version="4.3.0" />
-    <PackageReference Include="Microsoft.AspNetCore" Version="2.0.2" />
-    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.2">
+        <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.1.2">
+        <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>
